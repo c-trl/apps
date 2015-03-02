@@ -1,6 +1,8 @@
-# quick 10 minute app I made to help me locate job openings at companies I want to work for
-# specified by a list titled urls in jobber(urls)
-
+#|-------------------------------------------------|
+#| quick 10 minute app I made to help me locate job|
+#| openings at companies I want to work for        |
+#| specified by a list titled urls in jobber(urls) |
+#|-------------------------------------------------|
 def jobber(urls):
     import requests
     from bs4 import BeautifulSoup as bs
