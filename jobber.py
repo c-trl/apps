@@ -16,12 +16,12 @@ def jobber(urls):
     'Product Analyst',
     'Database Analyst'
     ]
-    all_jobs = str()
-    for x in range (0,len(jobs)): # since jobs is actually a list, each series needs to be iterated through
-        all_jobs += jobs[x]
+    all_jobs = str() # where aggregated text from all provided urls will be housed
+    for x in range (0,len(jobs)):
+        all_jobs += jobs[x] # aggregating all webpage text
     for company in companies:
         for x in positions:    
             if x in all_jobs:
-                print x,'opening at', company
+                print 'Possible',x,'opening at', company
                 
 jobber(urls) # where urls is a list of urls containing job openings
