@@ -1,6 +1,6 @@
-#----------------------------------------------------------------
-# This is an app I'm working on to automate quickly graphing data
-#----------------------------------------------------------------
+#|-----------------------------------------------------------------|
+#| This is an app I'm working on to automate quickly graphing data |
+#|-----------------------------------------------------------------|
 
 def df_graph(data):
     import pandas as pd
