@@ -22,4 +22,4 @@ def jobber(urls):
             if x in all_jobs:
                 print x,'opening at', company
                 
-jobber(companies)
+jobber(urls)
