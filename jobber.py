@@ -15,7 +15,7 @@ def jobber(urls):
     'Database Analyst'
     ]
     all_jobs = str()
-    for x in range (0,len(jobs)):
+    for x in range (0,len(jobs)): # since jobs is actually a list, each series needs to be iterated through
         all_jobs += jobs[x]
     for company in companies:
         for x in positions:    
