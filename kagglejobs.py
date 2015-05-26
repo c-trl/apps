@@ -4,6 +4,9 @@ to a text file called 'kagglejobs.txt'.  Open with a text editor like notepad++
 and you can access links directly from there.  The script utilizes nltk and re to
 filter results by keywords defined in search_include and search_exclude.
 
+Requires:
+requests, beautifulsoup, nltk, re, pandas
+
 Happy Hunting!
 '''
 
