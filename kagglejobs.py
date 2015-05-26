@@ -1,3 +1,12 @@
+'''
+This little dude scrapes Kaggle's job listings and writes the job posting URLs
+to a text file called 'kagglejobs.txt'.  Open with a text editor like notepad++
+and you can access links directly from there.  The script utilizes nltk and re to
+filter results by keywords defined in search_include and search_exclude.
+
+Happy Hunting!
+'''
+
 import requests
 from bs4 import BeautifulSoup as bs
 import nltk
@@ -35,7 +44,7 @@ for page in pages:
 df['job'] = job
 df['by'] = by
 
-search_include = ['python', 'intern', 'new york']
+search_include = ['python']
 search_exclude = ['masters', 'master\'s', 'ms', 'phd', 'senior']
 
 read = int()
@@ -48,7 +57,7 @@ for url in df['job']:
     tokens = nltk.word_tokenize(text)
     read += 1
     print read, 'Page(s) Processed'
-    if 'python' in tokens and search_exclude not in tokens:
+    if search_include in tokens and search_exclude not in tokens:
         with open('test.txt', 'r') as reader:
             if url not in reader.read():
                 with open('kagglejobs.txt', 'a') as f:
