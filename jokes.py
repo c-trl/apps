@@ -7,15 +7,6 @@ import time
 import datetime
 import sys
 
-def echozulu():
-    def proto_int():
-        print random.randint(0,10)    
-    spam_list = {1:'Protocol {0} Activated...'.format(proto_int()),
-    2:'Processing authorization entry...',
-    3:'Accessing database...'}    
-    for _ in range(10):        
-        print spam_list[random.randint(1,3)]
-
 def charlietango():
     def spam_binary():
         lower = int(10**34)
